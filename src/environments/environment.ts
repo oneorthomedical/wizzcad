@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  WIZZCAD_BASE_URL: 'http://demo.wizzcad.com:8081',
+  WIZZCAD_BASE_URL_CONTENT: 'http://dev4.wizzcad.com:8081'
 };
 
 /*

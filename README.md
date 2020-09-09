@@ -1,6 +1,17 @@
-# WizzcadHoussk
+# Project structure
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.8.
+Each feature has it's own folder (home & login), 
+other shared/common code such as services, models, 
+helpers etc are placed in folders prefixed with an underscore 
+_ to easily differentiate them and group them together at the 
+top of the folder structure.
+Path aliases @app and @environments have been configured in
+ tsconfig.json that map to the /src/app and /src/environments directories.
+  This allows imports to be relative to the app and environments folders 
+  by prefixing import paths with aliases instead of having to use long 
+  relative
+ paths (e.g. `import MyComponent from '../../../MyComponent' `).
+ 
 
 ## Development server
 
