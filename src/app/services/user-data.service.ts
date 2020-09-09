@@ -13,7 +13,7 @@ export class UserDataService {
   }
 
   get(): Observable<any> {
-    console.log(this.authService.token);
+    console.log(this.authService);
     return this.server.request('content', '', this.authService.token);
   }
 }

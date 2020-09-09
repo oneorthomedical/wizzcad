@@ -20,7 +20,6 @@ export class LoginComponent {
   }
   login(): void {
     const val = this.form.value;
-    console.log(val);
     if (val.login && val.password) {
       this.authService.login(new User({
         login: val.login,

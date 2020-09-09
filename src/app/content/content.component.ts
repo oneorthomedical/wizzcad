@@ -9,7 +9,7 @@ import {takeUntil} from 'rxjs/operators';
 })
 export class ContentComponent implements OnInit {
   data: { createdAt: any; name: any; id: any; updatedAt: any }[];
-  columnsToDisplay = ['userName', 'age'];
+  columnsToDisplay = ['id', 'name', 'createdAt' , 'updatedAt'];
   constructor(private userData: UserDataService) {
   }
 

@@ -14,12 +14,6 @@ export class ServerService {
 
   constructor(private http: HttpClient) {
   }
-
-  setLoggedIn(loggedIn: boolean, token?: string): void {
-    this.loggedIn = loggedIn;
-    this.token = token;
-  }
-
   request(link: string, route: string, data?: any): Observable<any> {
     if (link === 'login') {
       return this.get(route, data);

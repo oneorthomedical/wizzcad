@@ -1,8 +1,10 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
+import {MatTableModule} from '@angular/material/table';
 
 const tableModule = [
   CommonModule,
+  MatTableModule
 ];
 
 @NgModule({
@@ -14,5 +16,4 @@ const tableModule = [
     ...tableModule
   ]
 })
-export class MaterialModule {
-}
+export class MaterialModule {}

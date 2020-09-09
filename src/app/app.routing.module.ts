@@ -6,7 +6,6 @@ import {AuthGuard} from '@app/shared/guard/auth.guard';
 import {LoginComponent} from './login/login.component';
 import {ContentComponent} from './content/content.component';
 import {MaterialModule} from '@app/shared/module/material.module';
-import {MatTableModule} from '@angular/material/table';
 
 
 const routes: Routes = [
@@ -21,7 +20,6 @@ const routes: Routes = [
     CommonModule,
     ReactiveFormsModule,
     MaterialModule,
-    MatTableModule
   ],
   exports: [
     RouterModule,
